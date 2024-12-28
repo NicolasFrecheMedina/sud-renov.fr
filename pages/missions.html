@@ -10,7 +10,6 @@
     <script src="https://kit.fontawesome.com/a3e0e094ea.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-
 <body>
     <div>
         <nav class="home-menu-container">
@@ -22,10 +21,26 @@
                 </div>
             </a>
             <div class="home-menu-section">
-                <!-- <li><a href="">SUD-RENOV <i class="fa-solid fa-chevron-down"></i></a></li> -->
-                <li><a href="">Services <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="">Réalisations <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li class="btn-home"><a href="">Nous Contacter</a></li>
+                <ul>
+                    <li class="dropdown" id="dp-01">
+                        <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" id="dp-1">
+                            <li><a href="#">Ingénierie</a></li>
+                            <li><a href="#">Conseil</a></li>
+                            <li><a href="#">Assistance à maîtrise d’ouvrage</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="dp-02">
+                        <a href="#">Réalisations <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" id="dp-2">
+                            <li><a href="#">Audit énergétique</a></li>
+                            <li><a href="#">Thermographie</a></li>
+                            <li><a href="#">MAR - Mon Accompagnateur Rénov’</a></li>
+                            <li><a href="#">Pathologie</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn-home"><a href="#">Nous Contacter</a></li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -67,8 +82,17 @@
                     <img src="../srv/04_thermographie_et_bilan_thermique.png" alt="">
                 </div>
                 <div class="mission-text-container">
-                    Manque texte: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum mollis quam,
-                    nec varius nulla egestas vel. Donec accumsan suscipit diam ac iaculis.
+                    <p>
+                        Nous réalisons des <strong>diagnostics par thermographie</strong>.
+                    C’est une méthode d'inspection <strong>non destructive</strong> qui
+                    utilise une caméra thermique pour détecter les
+                    variations de température à la surface des bâtiments.
+                    Cette technologie permet de repérer des anomalies
+                    invisibles à l'œil nu, telles que des ponts thermiques,
+                    des infiltrations d'humidité, des défauts d'isolation, ou
+                    des fuites d'air.
+                    </p>
+                    
                 </div>
             </div>
             <div class="mission-cards-container-2">
@@ -170,8 +194,6 @@
         </div>
     </div>
     <div class="mission-background">
-
-    
         <div class="mission-2">
             <h4>MAR - Mon Accompagnateur Rénov’</h4>
             <div class="mission-container-2">
@@ -205,11 +227,8 @@
                 <button class="btn-mission"><a href="">Contacter-nous</a></button>
             </div>
         </div>
-
     </div>
     <div class="mission-background-2">
-
-    
         <div class="mission-2">
             <h4>Pathologie</h4>
             <div class="mission-container-2">
@@ -217,10 +236,12 @@
                     <img src="../srv/06_pathologie.png" alt="">
                 </div>
                 <div class="mission-text-container">
-                    <p>Manque texte: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum mollis
-                        quam,
-                        nec varius nulla egestas vel. Donec accumsan suscipit diam ac iaculis. Cras blandit lobortis
-                        ligula eget aliquam.</p>
+                    <p>Nous réalisons des <strong>diagnostics complets</strong>  des bâtiments
+                        afin de détecter la présence d'humidité, de
+                        moisissures, de fuites d'eau ou de dégradations liées à
+                        des infiltrations. Ce diagnostic permet de déterminer
+                        l’origine des problèmes et de <strong> définir les actions à
+                        entreprendre.</strong></p>
                 </div>
             </div>
             <div class="mission-cards-container">
@@ -302,27 +323,25 @@
         </div>
     </div>
     </div>
-
-
-
-    <!-- <div class="Google">
-        <div>
-            Redirection Avis Google <br> (A développer)
+    <div class="part-5">
+        <div class="part-5-container">
+            <div class="part-5-sub-container">
+                <img src="../srv/07_google.png" alt="">
+                <div>Avis Clients</div>
+            </div>
+            <button class="custom-btn btn-5"><span>Votre avis nous intéresse</span></button>
         </div>
-
-    </div> -->
-
-
-    <footer style="background-color: #0c2b58; color: white; padding: 0px 20px;">
-        <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="home-menu-logo">
-                <div id="logo-nav">
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="home-menu-logo-2">
+                <div id="logo-nav-2">
                 </div>
             </div>
             <div class="footer-links">
-                <a href="/politique-de-confidentialite">Politique de confidentialité</a>
-                <a href="/cgv">CGV</a>
-                <a href="/mentions-legales">Mentions légales</a>
+                <a href="./pages/informations.html">Politique de confidentialité</a>
+                <a href="./pages/informations.html">CGV</a>
+                <a href="./pages/informations.html">Mentions légales</a>
             </div>
         </div>
 
