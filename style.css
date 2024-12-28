@@ -441,7 +441,6 @@ h3 {
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     cursor: default;
-    /* background-color: #82bddf; */
 }
 
 .part-2-title{
@@ -455,6 +454,7 @@ h3 {
     text-transform: capitalize;
     margin-top: 20px;
 }
+
 .part-2-title-bis{
     display: flex;
     align-items: center;
@@ -464,6 +464,7 @@ h3 {
     color: #13234e;
     text-transform: capitalize;
 }
+
 .part-2-container{
     display: flex;
     justify-content: center;
@@ -518,8 +519,6 @@ h3 {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* background: linear-gradient(170deg, #82bddf 48%, #F6C83A 48%, #F6C83A 52%, #82bddf 52%);
-    background-color: #82bddf; */
     background: linear-gradient(170deg, white 48%, #F6C83A 48%, #F6C83A 52%, white 52%);
     background-color: white;
 }
@@ -527,6 +526,7 @@ h3 {
 /* part-2 start */
 
 /* part-3 start */
+
 .part-3-line-container{
     background: linear-gradient(180deg, white 48%, #0c2b58 48%, #0c2b58 57%, white 52%);
     width: 100%;
@@ -617,9 +617,10 @@ h3 {
 
 /* part 4 start */
 
-/* .part-4{
-    background-color: #82bddf;
-} */
+.part-4{
+    cursor: default !important;
+}
+
 .part-sector-container{
     display: flex;
     align-items: center;
@@ -756,6 +757,7 @@ h5{
     border: none;
     margin-right: 20px;
   }
+
   .btn-5:hover {
      box-shadow:
      -7px -7px 20px 0px #fff9,
@@ -763,6 +765,7 @@ h5{
      7px 7px 20px 0px #0002,
      4px 4px 5px 0px #0001;
   }
+
   .btn-5:before,
   .btn-5:after{
     content:'';
@@ -778,6 +781,7 @@ h5{
      4px 4px 5px 0px #0002;
     transition:400ms ease all;
   }
+
   .btn-5:after{
     right:inherit;
     top:inherit;
@@ -829,6 +833,7 @@ footer{
     font-size: 12px;
     text-transform: uppercase;
 }
+
 .footer-links a {
     color: white; 
     text-decoration: none;
@@ -848,6 +853,8 @@ footer{
     color: goldenrod;
     margin-bottom: 3px;
 }
+
+/* footer end */
 
 /* page mission start */
 
@@ -1110,3 +1117,65 @@ li {
 }
 
 /* page mission end */
+
+/* page informations start */
+.information-text{
+    margin: 30px 62px;
+}
+
+.logo-naco-dev{
+    width: 70px;
+}
+
+
+/* page information end */
+
+/* anchor start */
+
+#ML::before {
+    content: ""; 
+    display: block; 
+    height: 135px;
+    margin-top: -135px;
+}
+
+#CGV::before {
+    content: ""; 
+    display: block; 
+    height: 135px;
+    margin-top: -135px;
+}
+
+#SRV{
+    scroll-margin-top: 135px;
+}
+
+#ING{
+    scroll-margin-top: 150px;
+}
+
+#CSL{
+    scroll-margin-top: 150px;
+}
+
+#AMO{
+    scroll-margin-top: 150px;
+}
+
+#AEN{
+    scroll-margin-top: 165px;
+}
+
+#THE{
+    scroll-margin-top: 165px;
+}
+
+#MAR{
+    scroll-margin-top: 165px;
+}
+
+#PAT{
+    scroll-margin-top: 165px;
+}
+
+/* anchor end */
