@@ -1220,6 +1220,7 @@ li {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: all 0.3s ease;
     margin-bottom: 30px;
+    padding: 15px 0px;
 }
 
 .part-form-container:hover{
