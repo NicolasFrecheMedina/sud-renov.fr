@@ -315,7 +315,7 @@ h3 {
     border: none;
     background: none;
     padding: 22px 97px;
-
+    cursor: pointer;
 }
 
 .btn-mission>a {
@@ -363,6 +363,13 @@ h3 {
 
 .btn-mission:hover a::before {
     transform: skewX(40deg) translateX(200%);
+}
+
+.btn-submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 /* btns end*/
@@ -1179,3 +1186,165 @@ li {
 }
 
 /* anchor end */
+
+/* page contact start */
+
+.part-geoloc-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.part-geoloc-container > div > img{
+    width: 400px;
+}
+
+.part-geoloc-container > div > iframe{
+    width: 400px;
+}
+
+.part-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.part-form-container{
+    background-color: #29476c;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.part-form-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #29476c;
+}
+
+#form{
+    background-color: white;
+    width: 80%;
+    margin: 30px 0px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.form-sep{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.form-sep-2{
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+
+textarea {
+    height: 20px;
+    border: 0.4px solid #ccc; 
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px; 
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #007BFF; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input {
+    height: 20px;
+    border: 0.4px solid #ccc; 
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px; 
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007BFF; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select {
+    height: 28px;
+    border: 0.4px solid #ccc; 
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px; 
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #007BFF; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-text{
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    border: solid 1px #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 17px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+    background-color: #007BFF;
+}
+
+/* Ajouter une icône dans la checkbox si cochée */
+.checkbox-container input[type="checkbox"]:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Focus sur la checkbox */
+.checkbox-container input[type="checkbox"]:focus + .checkmark {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* page contact start */

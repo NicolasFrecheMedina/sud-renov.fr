@@ -14,3 +14,18 @@ document.querySelectorAll('.read-more').forEach(function(button) {
         }
     });
 });
+
+const today = new Date();
+const formattedDate = today.toISOString().split('T')[0];
+const dateInput = document.getElementById('start');
+dateInput.value = formattedDate;
+dateInput.min = formattedDate;
+
+document.getElementById('different-address-checkbox').addEventListener('change', function () {
+    const additionalFields = document.getElementById('additional-address-fields');
+    if (this.checked) {
+        additionalFields.style.display = 'block'; // Affiche les champs
+    } else {
+        additionalFields.style.display = 'none'; // Masque les champs
+    }
+});

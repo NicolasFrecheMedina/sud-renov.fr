@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUD-RENOV | Ingénierie & Conseil en Rénovation Énergétique</title>
+    <link rel="shortcut icon" type="image/png" href="../srv/logo/Favicon_01.png" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/a3e0e094ea.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body id="top">
+    <div>
+        <nav class="home-menu-container">
+            <a href="../index.html">
+                <div class="home-menu-logo">
+                    <div id="logo-nav"></div>
+                    <div id="logo-text-nav">SUD-RENOV</div>
+                    <div id="logo-text-nav02">Ingénierie & Conseil en Rénovation Énergétique</div>
+                </div>
+            </a>
+            <div class="home-menu-section">
+                <ul>
+                    <li class="dropdown" id="dp-01">
+                        <a href="../index.html#SRV">Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" id="dp-1">
+                            <li><a href="../index.html#ING">Ingénierie</a></li>
+                            <li><a href="../index.html#CSL">Conseil</a></li>
+                            <li><a href="../index.html#AMO">Assistance à maîtrise d’ouvrage</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="dp-02">
+                        <a href="../pages/missions.html">Réalisations <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" id="dp-2">
+                            <li><a href="../pages/missions.html#AEN">Audit énergétique</a></li>
+                            <li><a href="../pages/missions.html#THE">Thermographie</a></li>
+                            <li><a href="../pages/missions.html#MAR">MAR - Mon Accompagnateur Rénov’</a></li>
+                            <li><a href="../pages/missions.html#PAT">Pathologie</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn-home"><a href="#">Nous Contacter</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="banner-01">
+        <div id="banner-filter">
+            <h1>Bureau d'études énergétique</h1>
+        </div>
+    </div>
+    <div class="part-form">
+        <h2>Nous contacter</h2>
+        <div class="part-form-container">
+            <form id="form" method="POST" netlify-honeypot="bot-field" netlify>
+                <div class="form-sep">
+                    <label for="selection-services">De quel type d'accompagnement avez vous besoin ?</label>
+                    <select name="services" id="services">
+                        <option value="">--Sélectionner une option--</option>
+                        <option value="audit">Audit énergétique</option>
+                        <option value="thermographie">Thermographie</option>
+                        <option value="MAR">MAR - Mon Accompagnateur Rénov'</option>
+                        <option value="pathologie">Pathologie</option>
+                        <option value="unknow">Je ne suis pas sûr(e)</option>
+                    </select>
+                </div>
+                <div class="form-sep">
+                    <label for="start">Date souhaitée pour débuter votre projet :</label>
+                    <input type="date" id="start" name="trip-start" value="2025-01-22" min="2025-01-01"
+                        max="2040-12-31" />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep">
+                    <label for="name">Votre Nom* :</label>
+                    <input id="name" name="name" type="text" required />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep">
+                    <label for="surname">Votre Prénom :</label>
+                    <input id="surname" name="surname" type="text" />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep">
+                    <label for="email">Votre adresse Email* :</label>
+                    <input id="email" type="email" name="email" required />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep">
+                    <label for="phone">Votre numéro de Téléphone* :</label>
+                    <input id="phone" type="phone" name="phone" required />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep">
+                    <label for="address">Adresse pour le devis :</label>
+                    <input id="address" name="address" type="text" />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep">
+                    <label for="city">Ville du devis :</label>
+                    <input id="city" name="city" type="text" />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep">
+                    <label for="CP">Code Postal :</label>
+                    <input id="CP" name="CP" type="number" max="5" />
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+                <div class="form-sep" id="responsive-textarea">
+                    <label for="message" id="lab-mess">Décrivez nous votre projet en quelques mots :</label>
+                    <textarea id="message" name="message" type="text"></textarea>
+                    <input name="bot-field" style="display: none;" /></label>
+                </div>
+
+                <div class="form-sep">
+                    <label class="checkbox-container">
+                        Adresse du projet si différente de l'adresse du devis
+                        <input type="checkbox" id="different-address-checkbox" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div id="additional-address-fields" style="display: none;">
+                    <div class="form-sep">
+                        <label for="project-address">Adresse de votre projet :</label>
+                        <input id="project-address" name="project-address" type="text" />
+                        <input name="bot-field" style="display: none;" /></label>
+                    </div>
+                    <div class="form-sep">
+                        <label for="project-city">Ville du projet :</label>
+                        <input id="project-city" name="project-city" type="text" />
+                        <input name="bot-field" style="display: none;" /></label>
+                    </div>
+                    <div class="form-sep">
+                        <label for="project-cp">Code postal du projet :</label>
+                        <input id="project-cp" name="project-cp" type="text" />
+                        <input name="bot-field" style="display: none;" /></label>
+                    </div>
+                </div>
+
+
+                <div class="form-text">
+                    Pour mieux traiter votre demande, veuillez envoyer les documents suivants par mail <a
+                        href="mailto:contact@sud-renov.fr">contact@sud-renov.fr</a> : plans, dpe, audit, photos du bien
+                </div>
+                <div class="btn-submit">
+                    <button class="btn-mission" type="submit"><a>ENVOYER</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="part-geoloc">
+        <h2>Nous trouver</h2>
+        <div class="part-geoloc-container">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.002167115903!2d-1.3197945237587816!3d43.668924751413634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5151081a799c75%3A0xdda093218e3abfd5!2s8%20Imp.%20de%20la%20Cal%C3%A8che%2C%2040230%20Saint-Vincent-de-Tyrosse!5e0!3m2!1sfr!2sfr!4v1735470010064!5m2!1sfr!2sfr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <img src="../srv/logo/Logo_01_sudrenov.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="part-4">
+        <h2>Notre secteur</h2>
+        <div class="part-sector-container">
+            <div class="keyword-img">
+                <svg id="svgFranceMap" data-name="France" xmlns="http://www.w3.org/2000/svg" width="350" height="200"
+                    viewBox="73 240 55 85">
+                    <rect width="100%" height="100%" fill="white" />
+                    <path id="jqvmap1_fr-40" fill="none" stroke="#0c2b58" stroke-width="0.2"
+                        d="M92.72,260.48l-4.35,2.2-1.11.05-2.44,13-3.16,12.06-1,4.67-.81,3.29-2,3.51,3.94,2,3.6-.24,2.11-1.87,1.73,1.36-1,1,.75.26.61-.87,3.12.24,1.73-1.36,3.22.13,1.26-.64h2l.5.64,1.61-.51,1.49,1.12,2-.61,2.61-.88.38.62,4,.13,2-1.12-1-1.69,1-2.61,1.36-1.78-.42-2.32,1.1-1.1-1.62-2.74,1.36-1.65,1.51-.28,1.36.55,1.93-1.65.68,2.06.68,1L125,286l-.13-1.77.44-1-.33-.86.38-2.72,1.49-1.49-.75-.87-1.62-.14-1.87-.72-2.72.24-.5-3-1.77-2-.75-.24.26,2.48v.76l-2.37.11-2.47-.86-.51-3.11L110,269l-1.23-.11-.2-1.16-1.36-.88-2.24-.61.62-.75v-.76l-.75-.62-.86-.74-2.5.37L100,264.92l-1,.13-1.6-1.12-2.37,1-1.11-.75,1-1.22.11-1.63Z"
+                        transform="translate(0.01)" />
+                </svg>
+                <div class="sector-title-container">
+                    <i class="fa-solid fa-map-pin fa-xl"></i>
+                    <h5>Landes <br>(40)</h5>
+                </div>
+            </div>
+            <div class="keyword-separator"></div>
+            <div class="keyword-img">
+                <svg id="svgFranceMap" data-name="France" xmlns="http://www.w3.org/2000/svg" width="350" height="200"
+                    viewBox="68 280 55 65">
+                    <rect width="100%" height="100%" fill="white" />
+                    <path id="jqvmap1_fr-40" fill="none" stroke="#0c2b58" stroke-width="0.2"
+                        d="M115.42,298.68l-2,1.12-4-.13-.38-.62-2.61.88-2,.61-1.49-1.12-1.61.51-.5-.64h-2l-1.26.64-3.22-.13-1.73,1.36-3-.23-.61.87-.75-.26,1-1-1.73-1.36-2.11,1.87-3.6.24-3.94-2-.57,1-3.16,3.84-2.46,1-1.78.26v1.51l1.71,1.53,2.46.13.13,1.78,1.93.15.55-1.25,2.61,1.1,1.64.41.4,1.65-1,.83v2.59l-1.93,1-.13,1.23,1.23,1.39,2.19.68.42-2.07,1.23-1.37-.13,1.78,1,1.38h2.4l1.09,1.49,3.29.55,3.16,1.93h5.2l.29,2.88,3.55,2.74,1.38,1.64,1.52-.81,1.36-.28.68.68,1.25-.68,2.39-1.32.22-2.83,1.09-.83.57-4.52,2,.41.84-.54-1-1.93,3.71-3.16,2.19-4.94,1.36-1.77-1.64-2.46-1.1-1.65,1.51-1.38-2.32-3.84-3.71-.26Z"
+                        transform="translate(0.01)" transform="translate(0.01)" />
+                </svg>
+                <div class="sector-title-container">
+                    <i class="fa-solid fa-map-pin fa-xl"></i>
+                    <h5>Béarn<br>Pays-Basque <br>(64)</h5>
+                </div>
+            </div>
+            <div class="keyword-separator"></div>
+            <div class="keyword-img">
+                <svg id="svgFranceMap" data-name="France" xmlns="http://www.w3.org/2000/svg" width="350" height="200"
+                    viewBox="100 265 70 60">
+                    <rect width="100%" height="100%" fill="white" />
+                    <path id="jqvmap1_fr-40" fill="none" stroke="#0c2b58" stroke-width="0.2"
+                        d="M140.49,279.74l-4.1.39-1.1,1.93-2.48.26-2.32.42-1-1.36-2.19,2.2-1.62-1.39-1,2.07.13,1.77-1.51.42-.68-1-.68-2.06L120,285l-1.36-.55-1.51.28-1.36,1.65,1.62,2.74-1.1,1.1.42,2.32-1.36,1.78-1,2.61,1.09,1.93,3.47.24,1.36-.72h2.1l-.11,2.34,1.61.88,1.62.24.74,2,.38.37-.24,1.23-.51.5,1.49,1,.11,1.12h1.87l.5-.5h1.74l.51,1.11h1.73l.5,1h3.36l2.5,1.3.22-.31,1.36-.75,2.48-3.22,4.61.37,2,1.36.64-.87,1-3,1.23-2.85,2.61-1.12,1.25-.5-.37-1.12-1.25-.13-.48-1.23h-1l-1.6-1.62.11-1.12-2.11-2.11-.37-1.33-1.36.59-.38-.75.88-1.36-1-1v-1.66l-.85-.88-2.74-.13v-1.59l1.49-1.12v-1.25l1.62-.74-.88-.49-1,.49h-2l-.61-.57-.33.11-.71.68Z"
+                        transform="translate(0.01)" transform="translate(0.01)" />
+                </svg>
+                <div class="sector-title-container">
+                    <i class="fa-solid fa-map-pin fa-xl"></i>
+                    <h5>Gerse <br>(32)</h5>
+                </div>
+            </div>
+            <div class="keyword-separator"></div>
+            <div class="keyword-img">
+
+                <svg id="svgFranceMap" data-name="France" xmlns="http://www.w3.org/2000/svg" width="350" height="200"
+                    viewBox="65 220 85 55">
+                    <rect width="100%" height="100%" fill="white" />
+                    <path id="jqvmap1_fr-40" fill="none" stroke="#0c2b58" stroke-width="0.2"
+                        d="M93.73,218.91l-2.15,3.29-.73,11.48-1.77,11.68-1.25,9-.14,2.35,1-3.16,1.89-2.44,2.74,2.48.29.81.81,1.1-3.44.18-.54-.83-1.36.55-.29,2.06-1.51,2.06v3.29l1.11-.05,4.35-2.23,2.34.85L95,263l-1,1.22,1.11.75,2.37-1,1.6,1.12,1-.13,1.47-1.23,2.5-.37.86.74.75.62v.74l-.62.75,2.24.61,1.33.85.13,1.12,1.23.11,1.73,1.87.51,3.11,2.47.86,2.37-.11v-.75l-.26-2.48.75.24,1.4,1.71,2.19-.35,1-1-.13-1.36-.88-.75.27-1.38h1.36l1.36-.86-.62-1.25-.37-1.86,1-1.74,2.1-3.22,1.25-1.49,1.12-.37.24-1.23-1.49-.13L126.7,255l.48-1.36,1.75-.38,1.23-.37,1.45-.2,0,0-.11-2.72,1.36-1-1.73-1.12L129.37,250l-4.24.13-.37-1-1.23-.61,1-1.26v-1.36l-.5-.74v-.75l1.25-.74.37-2.22.74-2-.74-1.12h-1.36l-.73-.86-.7,1.47-1.36-1-1.93,1-1.64-.26-3.14-3.16-1.93-.13-.55-4.39-3.57-.42-.14-2.06-.68.68h-4l.19.88,1,4,.26,4-.68,1.1-.68-3.29L102,228.31,95,222l.16-2.88Z"
+                        transform="translate(0.01)" transform="translate(0.01)" />
+                </svg>
+                <div class="sector-title-container">
+                    <i class="fa-solid fa-map-pin fa-xl"></i>
+                    <h5>Gironde <br>(33)</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="home-menu-logo-2">
+                <div id="logo-nav-2">
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="./informations.html">Politique de confidentialité</a>
+                <a href="./informations.html#CGV">CGV</a>
+                <a href="./informations.html#ML">Mentions légales</a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            © 2025 SUD-RENOV. Tous droits réservés.
+        </div>
+    </footer>
+</body>
+
+<script src="../demo.js"></script>
+
+</html>
