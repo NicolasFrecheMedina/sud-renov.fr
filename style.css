@@ -70,7 +70,7 @@ a:link{
 
 .home-menu-section ul li {
     position: relative;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .home-menu-section ul li a {
@@ -903,7 +903,7 @@ h2 {
 }
 
 h4 {
-    color: skyblue;
+    color: #13234e;
     margin: 15px 0px 10px 15px;
     font-size: x-large;
     cursor: default;
@@ -1154,7 +1154,7 @@ li {
 }
 
 #SRV{
-    scroll-margin-top: 135px;
+    scroll-margin-top: 165px;
 }
 
 #ING{
@@ -1182,6 +1182,22 @@ li {
 }
 
 #PAT{
+    scroll-margin-top: 165px;
+}
+
+#RAEN{
+    scroll-margin-top: 165px;
+}
+
+#RTHE{
+    scroll-margin-top: 165px;
+}
+
+#RAMO{
+    scroll-margin-top: 165px;
+}
+
+#RPAT{
     scroll-margin-top: 165px;
 }
 
@@ -1330,7 +1346,6 @@ select:focus {
     background-color: #007BFF;
 }
 
-/* Ajouter une icône dans la checkbox si cochée */
 .checkbox-container input[type="checkbox"]:checked + .checkmark::after {
     content: '';
     position: absolute;
@@ -1343,9 +1358,64 @@ select:focus {
     transform: rotate(45deg);
 }
 
-/* Focus sur la checkbox */
 .checkbox-container input[type="checkbox"]:focus + .checkmark {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* page contact start */
+/* page contact end */
+
+/* page realisation start */
+
+.realisation-container{
+    margin-bottom: 70px;
+}
+
+.container-pour-3-realsations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.container-pour-la-realisation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 350px;
+    box-shadow: -20px 20px 60px #bebebe,
+    20px -20px 60px #ffffff;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin: 0px 25px;
+    transition: all 0.3s ease;
+}
+
+.container-pour-la-realisation:hover{
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.image-de-la-realisation{
+    margin:5px 0px ;
+    width: 295px;
+    height: 210px;
+    border-radius: 5px;
+    object-fit:cover;
+}
+
+.texte-de-la-realisation{
+    width: 295px;
+    font-size: 13px;
+}
+
+.titre-de-la-realisation{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.description-de-la-realisation{
+    font-size: 11px;
+}
+
+/* page realisation end */
